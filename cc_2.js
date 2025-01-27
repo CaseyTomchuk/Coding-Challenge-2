@@ -16,3 +16,15 @@ for (let i = 0; i < scores.length; i++) {
 
 const averageScore = sum /scores.length; // sum / scores.length divides the sum by the number of items in the array.
 console.log("The scores are: | " + scores + " | The average score is: | " + averageScore + " |"); // Yes the | thing is very extra
+
+//Task 3: Working with Objects
+let employee = {
+    name: "casey",
+    age: 19,
+    department: "Sales",
+    isActive: true
+}; //Created object
+
+employee.department = "marketing";
+employee.position = "manager";
+console.log(employee);
