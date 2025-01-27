@@ -56,3 +56,15 @@ console.log(customers[i])
 }; // I created this for loop so that I could display each item in the array seperately, since attempting to display them all at once led to it showing {...}
 // let i = 0 sets the index to start at 0. As long as i is less than the amount of objects left in the array, the loop will repeat. 
 // Each repetition logs one full object in the array.
+
+//Task 5: Object Methods
+let order = {
+    orderID: 1,
+    customerName: "josh",
+    amount: 500,
+    calculateTax: function() {
+      return this.amount * 0.10; // could have also done return order.amount
+    }
+};
+console.log("orderID: " + order.orderID, "| name: " + order.customerName + " | amount: " + order.amount + " | tax: " + order.calculateTax());
+//I did the console log in a bit of a roundabout way to avoid showing the function information and so I could fit it all in one line.
