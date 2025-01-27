@@ -28,3 +28,31 @@ let employee = {
 employee.department = "marketing";
 employee.position = "manager";
 console.log(employee);
+
+//Task 4: Array of Objects
+let customers = [{ //creating the array (using a [bracket] on the outsides)
+    name: "elise",
+    email: "elise123@gmail.com",
+    purchaseAmount: 100
+}, //defining each object in the array
+{
+    name: "albert",
+    email: "albert500@gmail.com",
+    purchaseAmount: 500
+},
+{
+    name: "gabe",
+    email: "gabe591@gmail.com",
+    purchaseAmount: 124
+}];
+customers.push({
+    name: "jon",
+    email: "jonsemail@gmail.com",
+    purchaseAmount: 205
+});
+
+for (let i = 0; i < customers.length; i++) {
+console.log(customers[i])
+}; // I created this for loop so that I could display each item in the array seperately, since attempting to display them all at once led to it showing {...}
+// let i = 0 sets the index to start at 0. As long as i is less than the amount of objects left in the array, the loop will repeat. 
+// Each repetition logs one full object in the array.
